@@ -1,109 +1,136 @@
 <!Doctype html>
 <html>
-  <head>
+   <head>
       <title>Basket</title>
-
       <!-- css code -->
       <link href="css/index.css" rel="stylesheet" type="text/css">
-
       <!-- Jquery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
       <!-- Script Comes here-->
       <script src="js/main.js"></script>
-
-      <body>
-        <div class="web">
-          <div class="main">
-
+   <body>
+      <div class="web">
+         <div class="main">
             <!-- Start Header -->
             <div class="header">
-                <img src="images/to_the_new.jpg">
+               <img src="images/to_the_new.jpg">
             </div>
             <!-- End Header -->
-
+            <!-- Start Container -->
             <div class="content">
-
-                <span class="titles">Your Basket</span>
-                <p class="description">
+               <span class="titles">Your Basket</span>
+               <p class="description">
                   Items you have added to your basket are shown below.<br />
                   Adjust the quantities or remove items before continuing your purchase.
-                </p>
-
-                <!--  Product Listing -->
-                <div class="productlisting">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="product">Product</th>
-                                <th>Price</th>
-                                 <th>Qty</th>
-                                <th>Cost</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr class="item">
-                              <td title="Cotton T-shirt,Medium">Cotton T-shirt,Medium</td>
-                              <td class="price">200</td>
-                              <td class="counter">
-                                <input type="number" min="1" max="10" class="costupdate" value="1">
-                              </td>
-                              <td class="cost">200</td>
-                              <td>
-                                <img src="images/Trash-512.png" title="Delete" class="delete">
-                              </td>
-                            </tr>
-
-                            <tr class="item">
-                              <td title="Baseball Cap,One Size">Baseball Cap,One Size</td>
-                              <td class="price">300</td>
-                              <td class="counter">
-                                <input type="number" min="1" max="10"  value="1" class="costupdate" >
-                              </td>
-                              <td class="cost">300</td>
-                              <td>
-                                <img src="images/Trash-512.png" title="Delete" class="delete">
-                                </td>
-                            </tr>
-
-                            <tr class="item">
-                              <td title="Swim Shorts,Medium">Swim Shorts,Medium</td>
-                              <td class="price">400</td>
-                              <td class="counter">
-                                <input type="number" min="1" max="10"  value="1" class="costupdate">
-                              </td>
-                              <td class="cost">400</td>
-                              <td>
-                                <img src="images/Trash-512.png" title="Delete" class="delete">
-                              </td>
-                            </tr>
-
-                              <tr>
-                                  <td colspan="3">Subtotal</td>
-                                  <td class="subtotal">240</td>
-                              </tr>
-                              <tr>
-                                  <td colspan="3">VAT@20%</td>
-                                  <td class="vat"> 240</td>
-                              </tr>
-
-                                <tr>
-                                  <td colspan="3">Total Cost</td>
-                                  <td class="totalcost">480</td>
-                                </tr>
-
-                        <tbody>
-                    </table>
-
+               </p>
+               <!--  Product Listing -->
+               <div class="productlisting">
+                  <table style="border-collapse:collapse;">
+                     <thead>
+                        <tr>
+                           <th class="product">Product</th>
+                           <th>Price</th>
+                           <th>Qty</th>
+                           <th>Cost</th>
+                        </tr>
+                        <hr style="float:left;"/>
+                     </thead>
+                     <tbody>
+                        <tr class="item">
+                           <td title="Cotton T-shirt,Medium">Cotton T-shirt,Medium</td>
+                           <td class="price">200</td>
+                           <td class="counter" style="display:inline-block">
+                              <input type="text" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
+                              <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
+                              <div class="increment" style="display:inline-block">
+                                 <span class="inc" title="Increase">
+                                 +
+                                 </span>
+                              </div>
+                              <div class="decrement" style="display:inline-block">
+                                 <span class="dec" title="Decrease">
+                                 -
+                                 </span>
+                              </div>
+                           </td>
+                           <td class="cost">200</td>
+                           <td>
+                              <img src="images/Trash-512.png" title="Delete" class="delete">
+                           </td>
+                        </tr>
+                        <tr class="item">
+                           <td title="Baseball Cap,One Size">Baseball Cap,One Size</td>
+                           <td class="price">300</td>
+                           <td class="counter" style="display:inline-block">
+                              <input type="text" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
+                              <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
+                              <div class="increment" style="display:inline-block">
+                                 <span class="inc" title="Increase">
+                                 +
+                                 </span>
+                              </div>
+                              <div class="decrement" style="display:inline-block">
+                                 <span class="dec" title="Decrease">
+                                 -
+                                 </span>
+                              </div>
+                           </td>
+                           <td class="cost">300</td>
+                           <td>
+                              <img src="images/Trash-512.png" title="Delete" class="delete">
+                           </td>
+                        </tr>
+                        <tr class="item">
+                           <td title="Swim Shorts,Medium">Swim Shorts,Medium</td>
+                           <td class="price">400</td>
+                           <td class="counter" style="display:inline-block">
+                              <input type="text" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
+                              <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
+                              <div class="increment" style="display:inline-block">
+                                 <span class="inc" title="Increase">
+                                 +
+                                 </span>
+                              </div>
+                              <div class="decrement" style="display:inline-block">
+                                 <span class="dec" title="Decrease">
+                                 -
+                                 </span>
+                              </div>
+                           </td>
+                           <td class="cost">400</td>
+                           <td>
+                              <img src="images/Trash-512.png" title="Delete" class="delete">
+                           </td>
+                        </tr>
+                        <tr class="sub" style="color:grey">
+                           <td colspan="3">Subtotal</td>
+                           <td class="subtotal">240</td>
+                        </tr>
+                        <tr >
+                           <td colspan="3">VAT@20%</td>
+                           <td class="vat"> 240</td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">Total Cost</td>
+                           <td class="totalcost">480</td>
+                        </tr>
+                     <tbody>
+                  </table>
+                  <!-- Buynow button -->
                   <div class="buynow">
-                      <input type="submit" value="Buy Now">
+                     <input type="submit" value="Buy Now    >> " class="buy">
                   </div>
-                </div>
+               </div>
             </div>
-          </div>
-
-        </div>
-      </body>
-  </head>
+         </div>
+         <div class="footer">
+           <center>
+            <span class="foo">
+            &copy; 2017 TO THE NEW
+            </span>
+           </center>
+         </div>
+      </div>
+   </body>
+   </head>
 </html>
