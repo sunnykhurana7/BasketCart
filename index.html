@@ -30,7 +30,7 @@
                         <tr>
                            <th class="product">Product</th>
                            <th>Price</th>
-                           <th>Qty</th>
+                           <th class="qty">Qty</th>
                            <th>Cost</th>
                         </tr>
                         <hr style="float:left;"/>
@@ -40,68 +40,82 @@
                            <td title="Cotton T-shirt,Medium">Cotton T-shirt,Medium</td>
                            <td class="price">200</td>
                            <td class="counter" style="display:inline-block">
-                              <input type="text" min = "1" max = "10" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
+                              <input type="number"  min="1" max="10" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
                               <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
-                              <div class="increment" style="display:inline-block">
+                             <div class= "combine">
+                              <div class="increment" >
                                  <span class="inc" title="Increase">
                                  +
                                  </span>
                               </div>
-                              <div class="decrement" style="display:inline-block">
+                              <div class="decrement" >
                                  <span class="dec" title="Decrease">
                                  -
                                  </span>
                               </div>
+                            </div>
+
                            </td>
                            <td class="cost">200</td>
                            <td>
                               <img src="images/Trash-512.png" title="Delete" class="delete">
                            </td>
                         </tr>
+
+
                         <tr class="item">
                            <td title="Baseball Cap,One Size">Baseball Cap,One Size</td>
-                           <td class="price">300</td>
-                           <td class="counter" style="display:inline-block">
-                              <input type="text"  min = "1" max = "10" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
-                              <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
-                              <div class="increment" style="display:inline-block">
-                                 <span class="inc" title="Increase">
-                                 +
-                                 </span>
-                              </div>
-                              <div class="decrement" style="display:inline-block">
-                                 <span class="dec" title="Decrease">
-                                 -
-                                 </span>
-                              </div>
-                           </td>
-                           <td class="cost">300</td>
-                           <td>
-                              <img src="images/Trash-512.png" title="Delete" class="delete">
-                           </td>
-                        </tr>
-                        <tr class="item">
-                           <td title="Swim Shorts,Medium">Swim Shorts,Medium</td>
                            <td class="price">400</td>
                            <td class="counter" style="display:inline-block">
-                              <input type = "text" min = "1" max = "10" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
+                              <input type="number"  min="1" max="10" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
                               <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
-                              <div class="increment" style="display:inline-block">
+                             <div class= "combine">
+                              <div class="increment" >
                                  <span class="inc" title="Increase">
                                  +
                                  </span>
                               </div>
-                              <div class="decrement" style="display:inline-block">
+                              <div class="decrement" >
                                  <span class="dec" title="Decrease">
                                  -
                                  </span>
                               </div>
+                            </div>
+
                            </td>
                            <td class="cost">400</td>
                            <td>
                               <img src="images/Trash-512.png" title="Delete" class="delete">
                            </td>
                         </tr>
+
+
+                        <tr class="item">
+                           <td title="Swim Shorts,Medium">Swim Shorts,Medium</td>
+                           <td class="price">600</td>
+                           <td class="counter" style="display:inline-block">
+                              <input type="number"  min="1" max="10" style="width:25px;display:inline-block;" value="1" class="costupdate" max="10" min="1">
+                              <!-- <input type="number" min="1" max="10"  value="1" class="costupdate" > -->
+                             <div class= "combine">
+                              <div class="increment" >
+                                 <span class="inc" title="Increase">
+                                 +
+                                 </span>
+                              </div>
+                              <div class="decrement" >
+                                 <span class="dec" title="Decrease">
+                                 -
+                                 </span>
+                              </div>
+                            </div>
+
+                           </td>
+                           <td class="cost">600</td>
+                           <td>
+                              <img src="images/Trash-512.png" title="Delete" class="delete">
+                           </td>
+                        </tr>
+
                         <tr class="sub" style="color:grey">
                            <td colspan="3">Subtotal</td>
                            <td class="subtotal">240</td>
@@ -124,13 +138,14 @@
             </div>
          </div>
          <div class="footer">
-           <center>
+
             <span class="foo">
             &copy; 2017 TO THE NEW
             </span>
-           </center>
+           
          </div>
       </div>
    </body>
    </head>
 </html>
+
